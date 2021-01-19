@@ -1,17 +1,28 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Screen} from "./Screen/Screen";
-import {Buttons} from "./Buttons/Button";
 import {SetScreen} from "./SetScreen/SetScreen";
+import {CounterScreen} from "./CounterScreen/CounterScreen";
 
 function App() {
 
     let [score, setScore] = useState(0)
+    let [maxValue, setMaxValue] = useState<number>(5)
+    let [minValue, setMinValue] = useState<number>(0)
+
+    const changeScore = () => {
+        setScore(minValue)
+    }
+    const getMaxValue = (newMaxValue: number) => {
+        setMaxValue(newMaxValue)
+    }
+    const getMinValue = (newMinValue: number) => {
+        setMinValue(newMinValue)
+    }
 
     const incButton = () => {
         let newScore = score + 1
-        if (newScore > 5) {
-            newScore = 5
+        if (newScore > maxValue) {
+            return
         }
         setScore(newScore)
     }
@@ -22,19 +33,19 @@ function App() {
 
     return (
         <div>
-            <SetScreen/>
-            <div className="globalDiv">
-                <div className="screen">
-                    <Screen score={score}/>
-                </div>
-                <div className="buttons">
-                    <Buttons
-                        score={score}
-                        incButton={incButton}
-                        resetButton={resetButton}
-                    />
-                </div>
-            </div>
+            <SetScreen
+                getMaxValue={getMaxValue}
+                maxValue={maxValue}
+                getMinValue={getMinValue}
+                minValue={minValue}
+                changeScore={changeScore}
+            />
+            <CounterScreen
+                score={score}
+                incButton={incButton}
+                resetButton={resetButton}
+                maxValue={maxValue}
+            />
         </div>
     );
 }

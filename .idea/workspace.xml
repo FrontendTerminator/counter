@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3207bec1-ccf7-4d1c-908d-6545b1bdfc6b" name="Default Changelist" comment="" />
+    <list default="true" id="3207bec1-ccf7-4d1c-908d-6545b1bdfc6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-app/src/Buttons/Buttons.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/CounterScreen/CounterScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Buttons/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Screen/Screen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Screen/Screen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +23,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1mWF7m2kp7KplvYs88JR9IL53Kn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,13 +36,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\IT\counter\my-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IT\counter\my-app\src" />
       <recent name="C:\IT\Todolist_hw\exam\my-app\src\Screen" />
     </key>
     <key name="es6.move.members.recent.items">
@@ -70,7 +84,7 @@
       <workItem from="1609615575462" duration="206000" />
       <workItem from="1609749136642" duration="26000" />
       <workItem from="1611065559979" duration="2348000" />
-      <workItem from="1611072056783" duration="1630000" />
+      <workItem from="1611072056783" duration="14323000" />
     </task>
     <servers />
   </component>

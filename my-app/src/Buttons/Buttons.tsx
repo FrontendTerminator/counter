@@ -9,10 +9,10 @@ type ButtonsType = {
 export function Buttons (props: ButtonsType) {
     return (
         <div>
-            <button className="button"
+            <button
                 disabled={props.score === 5}
                 onClick={props.incButton}>inc</button>
-            <button className="button"
+            <button
                 disabled={props.score === 0}
                 onClick={props.resetButton}>reset</button>
         </div>

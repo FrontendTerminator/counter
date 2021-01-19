@@ -6,7 +6,8 @@ type ScreenType = {
 
 export function Screen(props: ScreenType) {
     return (
-        <div className={props.score === 5 ? "red" : ""}>
+        // <div className={props.score === 5 ? "red" : ""}>
+        <div>
             {props.score}
         </div>
     )
