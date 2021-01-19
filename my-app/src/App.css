@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+.globalDiv {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: #63DAFC;
+    background-color: black;
+    height: 110px;
+    width: 200px;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.screen {
+    height: 50px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #63DAFC;
+    background-color: black;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 1px;
+    color: #63DAFC;
+}
+
+.buttons {
+    border-style: solid;
+    border-width: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: #63DAFC;
+}
+
+.button {
+    margin: 5px;
+    width: 50px;
+    background-color: #63DAFC;
+    border-radius: 5px;
+}
+
