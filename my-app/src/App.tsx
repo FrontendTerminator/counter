@@ -8,9 +8,20 @@ function App() {
     let [score, setScore] = useState(0)
     let [maxValue, setMaxValue] = useState<number>(5)
     let [minValue, setMinValue] = useState<number>(0)
+    let [screenValue, setScreenValue] = useState<string | number>(0)
+    let [disabledValue, setDisabledValue] = useState<boolean>(false)
+
+
+    const changeScreenValue = () => {
+        const screenValueMessage = "Enter values and press 'set'"
+        setScreenValue(screenValueMessage)
+        setDisabledValue(true)
+    }
 
     const changeScore = () => {
         setScore(minValue)
+        setScreenValue(minValue)
+        setDisabledValue(false)
     }
     const getMaxValue = (newMaxValue: number) => {
         setMaxValue(newMaxValue)
@@ -25,11 +36,15 @@ function App() {
             return
         }
         setScore(newScore)
+        setScreenValue(newScore)
     }
 
     const resetButton = () => {
-        setScore(0)
+        setScore(minValue)
+        setScreenValue(minValue)
     }
+
+    // setScreenValue(   "Incorrect value!")
 
     return (
         <div>
@@ -39,12 +54,15 @@ function App() {
                 getMinValue={getMinValue}
                 minValue={minValue}
                 changeScore={changeScore}
+                changeScreenValue={changeScreenValue}
             />
             <CounterScreen
                 score={score}
                 incButton={incButton}
                 resetButton={resetButton}
                 maxValue={maxValue}
+                screenValue={screenValue}
+                disabledValue={disabledValue}
             />
         </div>
     );

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3207bec1-ccf7-4d1c-908d-6545b1bdfc6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/Buttons/Buttons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/CounterScreen/CounterScreen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Screen/Screen.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Buttons/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Buttons/Buttons.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/CounterScreen/CounterScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/CounterScreen/CounterScreen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Screen/Screen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Screen/Screen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.tsx" afterDir="false" />
     </list>
@@ -36,13 +37,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todolist" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\IT\counter\my-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IT\counter\my-app\src\Screen" />
       <recent name="C:\IT\counter\my-app\src" />
       <recent name="C:\IT\Todolist_hw\exam\my-app\src\Screen" />
     </key>
@@ -84,11 +86,25 @@
       <workItem from="1609615575462" duration="206000" />
       <workItem from="1609749136642" duration="26000" />
       <workItem from="1611065559979" duration="2348000" />
-      <workItem from="1611072056783" duration="14323000" />
+      <workItem from="1611072056783" duration="14635000" />
+      <workItem from="1611130952105" duration="51000" />
+      <workItem from="1611148435587" duration="7393000" />
     </task>
+    <task id="LOCAL-00001" summary="step one is done">
+      <created>1611086818432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611086818432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="step one is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="step one is done" />
   </component>
 </project>

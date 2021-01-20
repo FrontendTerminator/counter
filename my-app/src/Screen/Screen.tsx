@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
+import s from './Screen.module.css'
 
 type ScreenType = {
     score: number
+    maxValue: number
+    screenValue: number | string
 }
 
 export function Screen(props: ScreenType) {
+
+
     return (
-        // <div className={props.score === 5 ? "red" : ""}>
-        <div>
-            {props.score}
+        <div className={props.score === props.maxValue ? s.valueOnScreen : ""}>
+            {props.screenValue}
         </div>
     )
 }

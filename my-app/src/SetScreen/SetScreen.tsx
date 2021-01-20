@@ -7,6 +7,7 @@ type SetScreenPropsType = {
     maxValue: number
     minValue: number
     changeScore: () => void
+    changeScreenValue: () => void
 }
 
 export function SetScreen(props: SetScreenPropsType) {
@@ -28,6 +29,7 @@ export function SetScreen(props: SetScreenPropsType) {
     }
     const changeMyButtonBooleanValue = () => {
         setValue(false)
+        props.changeScreenValue()
     }
 
     return (

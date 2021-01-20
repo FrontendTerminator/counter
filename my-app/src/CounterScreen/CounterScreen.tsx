@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import {Screen} from "../Screen/Screen";
-import {Buttons} from "../Buttons/Buttons";
 import {MyButton} from "../Button/Button";
 
 type CounterScreenPropsType = {
@@ -8,24 +7,31 @@ type CounterScreenPropsType = {
     incButton: () => void
     resetButton: () => void
     maxValue: number
+    screenValue: number | string
+    disabledValue: boolean
 }
 
 export function CounterScreen(props: CounterScreenPropsType) {
 
+
+
     return (
         <div className="globalDiv">
             <div className="screen">
-                <Screen score={props.score}/>
+                <Screen
+                    screenValue={props.screenValue}
+                    score={props.score}
+                    maxValue={props.maxValue}/>
             </div>
             <div className="buttons">
                 <MyButton
-                    disabled={false}
+                    disabled={props.score === props.maxValue ? true : props.disabledValue}
                     score={props.score}
                     maxValue={props.maxValue}
                     incButton={props.incButton}
                     title={"inc"}/>
                 <MyButton
-                    disabled={false}
+                    disabled={props.disabledValue}
                     resetButton={props.resetButton}
                     title={"reset"}/>
             </div>
