@@ -1,5 +1,6 @@
 import React, {ChangeEvent, useState} from "react";
 import {MyButton} from "../Button/Button";
+import s from "./SetScreen.module.css"
 
 type SetScreenPropsType = {
     getMaxValue: (newMaxValue: number) => void
@@ -8,14 +9,13 @@ type SetScreenPropsType = {
     minValue: number
     changeScore: () => void
     changeScreenValue: () => void
+    setButtonValue: boolean
+    classInputValue: boolean
 }
 
 export function SetScreen(props: SetScreenPropsType) {
 
-    let [value, setValue] = useState<boolean>(true)
-
     const clickOnButtonSet = () => {
-        setValue(true)
         props.changeScore()
     }
 
@@ -28,27 +28,34 @@ export function SetScreen(props: SetScreenPropsType) {
         props.getMinValue(inputValue)
     }
     const changeMyButtonBooleanValue = () => {
-        setValue(false)
         props.changeScreenValue()
     }
 
     return (
         <div className="globalDiv">
             <div className="screen">
-                <input
-                    onClick={changeMyButtonBooleanValue}
-                    value={props.maxValue}
-                    onChange={readInputMaxValue}
-                    type={"number"}/>
-                <input
-                    onClick={changeMyButtonBooleanValue}
-                    value={props.minValue}
-                    onChange={readInputMinValue}
-                    type={"number"}/>
+                <div>
+                    <span>max value: </span>
+                    <input
+                        onClick={changeMyButtonBooleanValue}
+                        value={props.maxValue}
+                        onChange={readInputMaxValue}
+                        className={props.classInputValue ? s.input : ""}
+                        type={"number"}/>
+                </div>
+                <div>
+                    <span>start value: </span>
+                    <input
+                        onClick={changeMyButtonBooleanValue}
+                        value={props.minValue}
+                        onChange={readInputMinValue}
+                        className={props.classInputValue ? s.input : ""}
+                        type={"number"}/>
+                </div>
             </div>
             <div className="buttons">
                 <MyButton
-                    disabled={value}
+                    disabled={props.setButtonValue}
                     title={"set"}
                     clickOnButtonSet={clickOnButtonSet}
                 />

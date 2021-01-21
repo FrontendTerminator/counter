@@ -5,13 +5,22 @@ type ScreenType = {
     score: number
     maxValue: number
     screenValue: number | string
+    classInputValue: boolean
 }
 
 export function Screen(props: ScreenType) {
 
+    const changeClassName = () => {
+        if (props.score === props.maxValue) {
+            return s.valueOnScreen
+        }
+        if (props.classInputValue) {
+            return s.valueOnScreen
+        }
+    }
 
     return (
-        <div className={props.score === props.maxValue ? s.valueOnScreen : ""}>
+        <div className={changeClassName()}>
             {props.screenValue}
         </div>
     )

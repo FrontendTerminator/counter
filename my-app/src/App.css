@@ -2,6 +2,7 @@ body {
     background-color: black;
 }
 
+
 .globalDiv {
     border-style: solid;
     border-width: 3px;
@@ -9,7 +10,7 @@ body {
     border-color: #63DAFC;
     background-color: black;
     height: 110px;
-    width: 200px;
+    width: 240px;
     margin: 20px;
     padding: 5px;
     text-align: center;
@@ -20,7 +21,7 @@ body {
 }
 
 .screen {
-    height: 50px;
+    height: 60px;
     font-weight: bold;
     border-style: solid;
     border-width: 2px;
@@ -30,6 +31,10 @@ body {
     border-radius: 5px;
     padding: 1px;
     color: #63DAFC;
+}
+
+.screen input{
+    width: 60px;
 }
 
 .buttons {
@@ -42,6 +47,7 @@ body {
 }
 
 .button {
+    display: inline;
     margin: 5px;
     width: 50px;
     background-color: #63DAFC;

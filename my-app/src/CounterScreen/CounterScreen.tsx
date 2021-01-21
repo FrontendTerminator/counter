@@ -9,6 +9,7 @@ type CounterScreenPropsType = {
     maxValue: number
     screenValue: number | string
     disabledValue: boolean
+    classInputValue: boolean
 }
 
 export function CounterScreen(props: CounterScreenPropsType) {
@@ -19,6 +20,7 @@ export function CounterScreen(props: CounterScreenPropsType) {
         <div className="globalDiv">
             <div className="screen">
                 <Screen
+                    classInputValue={props.classInputValue}
                     screenValue={props.screenValue}
                     score={props.score}
                     maxValue={props.maxValue}/>

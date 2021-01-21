@@ -1,4 +1,5 @@
 import React from "react";
+import s from "./Button.module.css"
 
 type ButtonsType = {
     title: string
@@ -14,6 +15,7 @@ export function MyButton(props: ButtonsType) {
     return (
         <div>
             <button
+                className={s.button}
                 onClick={
                     props.incButton ||
                     props.resetButton ||
