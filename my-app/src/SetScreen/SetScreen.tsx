@@ -34,22 +34,22 @@ export function SetScreen(props: SetScreenPropsType) {
     return (
         <div className="globalDiv">
             <div className="screen">
-                <div>
+                <div className={"firstInput"}>
                     <span>max value: </span>
                     <input
                         onClick={changeMyButtonBooleanValue}
                         value={props.maxValue}
                         onChange={readInputMaxValue}
-                        className={props.classInputValue ? s.input : ""}
+                        className={props.classInputValue ? s.input : "" + "" + "input1"}
                         type={"number"}/>
                 </div>
-                <div>
+                <div className={"secondInput"}>
                     <span>start value: </span>
                     <input
                         onClick={changeMyButtonBooleanValue}
                         value={props.minValue}
                         onChange={readInputMinValue}
-                        className={props.classInputValue ? s.input : ""}
+                        className={props.classInputValue ? s.input : "" + "" + "input2"}
                         type={"number"}/>
                 </div>
             </div>

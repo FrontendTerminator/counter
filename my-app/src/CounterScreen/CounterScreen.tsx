@@ -15,7 +15,6 @@ type CounterScreenPropsType = {
 export function CounterScreen(props: CounterScreenPropsType) {
 
 
-
     return (
         <div className="globalDiv">
             <div className="screen">
@@ -26,16 +25,20 @@ export function CounterScreen(props: CounterScreenPropsType) {
                     maxValue={props.maxValue}/>
             </div>
             <div className="buttons">
-                <MyButton
-                    disabled={props.score === props.maxValue ? true : props.disabledValue}
-                    score={props.score}
-                    maxValue={props.maxValue}
-                    incButton={props.incButton}
-                    title={"inc"}/>
-                <MyButton
-                    disabled={props.disabledValue}
-                    resetButton={props.resetButton}
-                    title={"reset"}/>
+                <div className={"firstButton"}>
+                    <MyButton
+                        disabled={props.score === props.maxValue ? true : props.disabledValue}
+                        score={props.score}
+                        maxValue={props.maxValue}
+                        incButton={props.incButton}
+                        title={"inc"}/>
+                </div>
+                <div className={"secondButton"}>
+                    <MyButton
+                        disabled={props.disabledValue}
+                        resetButton={props.resetButton}
+                        title={"reset"}/>
+                </div>
             </div>
         </div>
     )

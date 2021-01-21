@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3207bec1-ccf7-4d1c-908d-6545b1bdfc6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/Button/Button.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Button/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/CounterScreen/CounterScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/CounterScreen/CounterScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Screen/Screen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Screen/Screen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/SetScreen/SetScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +89,7 @@
       <workItem from="1611072056783" duration="14635000" />
       <workItem from="1611130952105" duration="51000" />
       <workItem from="1611148435587" duration="7470000" />
-      <workItem from="1611218662868" duration="12572000" />
+      <workItem from="1611218662868" duration="15863000" />
     </task>
     <task id="LOCAL-00001" summary="step one is done">
       <created>1611086818432</created>
@@ -108,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611156065732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="logic is done, added localStorage">
+      <created>1611233871353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611233871354</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="step one is done" />
     <MESSAGE value="next commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="next commit" />
+    <MESSAGE value="logic is done, added localStorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="logic is done, added localStorage" />
   </component>
 </project>

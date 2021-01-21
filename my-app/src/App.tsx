@@ -8,7 +8,7 @@ function App() {
     const stringMinValue = localStorage.getItem('minValue')
     const numberMinValue = Number(stringMinValue)
     const stringMaxValue = localStorage.getItem('maxValue')
-    const numberMaxValue = Number(stringMaxValue)
+    const numberMaxValue = Number(stringMaxValue) // Number or +
 
     let [score, setScore] = useState(0)
     let [maxValue, setMaxValue] = useState<number>(numberMaxValue)
@@ -46,9 +46,11 @@ function App() {
         setDisabledValue(false)
         setSetButtonValue(true)
     }
+
     const getMaxValue = (newMaxValue: number) => {
         setMaxValue(newMaxValue)
     }
+
     const getMinValue = (newMinValue: number) => {
         setMinValue(newMinValue)
     }

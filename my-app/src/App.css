@@ -2,22 +2,24 @@ body {
     background-color: black;
 }
 
+.setScreen {
+    display: inline-block;
+}
+.CounterScreen {
+    display: inline-block;
+}
 
 .globalDiv {
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-radius: 15px;
     border-color: #63DAFC;
     background-color: black;
     height: 110px;
     width: 240px;
-    margin: 20px;
+    margin: 20px 0px 0px 20px;
     padding: 5px;
     text-align: center;
-}
-
-.red {
-    color: red;
 }
 
 .screen {
@@ -33,24 +35,45 @@ body {
     color: #63DAFC;
 }
 
+.firstInput {
+    margin-left: 4px;
+}
+.input1 {
+    text-align: center;
+}
+.input2 {
+    text-align: center;
+}
+
+
 .screen input{
     width: 60px;
 }
 
 .buttons {
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     background-color: black;
     margin: 5px;
     border-radius: 5px;
     border-color: #63DAFC;
 }
 
+.firstButton {
+    display: inline-block;
+    margin: 0 20px 0px 20px ;
+}
+.secondButton {
+    display: inline-block;
+    margin: 0 20px 0px 20px ;
+}
+
 .button {
-    display: inline;
+    /*display: inline;*/
     margin: 5px;
     width: 50px;
     background-color: #63DAFC;
     border-radius: 5px;
 }
+
 
